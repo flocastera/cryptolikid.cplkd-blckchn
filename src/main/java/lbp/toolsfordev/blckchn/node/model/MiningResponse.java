@@ -1,5 +1,6 @@
-package lbp.toolsfordev.blckchn.model;
+package lbp.toolsfordev.blckchn.node.model;
 
+import lbp.toolsfordev.blckchn.blockchain.model.Transaction;
 import lombok.*;
 
 import java.io.Serializable;

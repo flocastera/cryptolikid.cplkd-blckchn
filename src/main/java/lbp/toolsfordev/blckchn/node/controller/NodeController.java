@@ -1,8 +1,12 @@
-package lbp.toolsfordev.blckchn.controller;
+package lbp.toolsfordev.blckchn.node.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import lbp.toolsfordev.blckchn.blockchain.BlockchainService;
-import lbp.toolsfordev.blckchn.model.*;
+import lbp.toolsfordev.blckchn.blockchain.model.Block;
+import lbp.toolsfordev.blckchn.blockchain.model.Transaction;
+import lbp.toolsfordev.blckchn.blockchain.service.BlockchainService;
+import lbp.toolsfordev.blckchn.node.model.BlockchainInfos;
+import lbp.toolsfordev.blckchn.node.model.MiningResponse;
+import lbp.toolsfordev.blckchn.node.model.ResponseMessage;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +27,7 @@ import java.util.UUID;
  * @version 1.0
  * @date 01/06/2018
  */
-@RestController(value = "/")
+@RestController(value = "/node")
 public class NodeController {
 	private Log LOG = LogFactory.getLog(NodeController.class);
 

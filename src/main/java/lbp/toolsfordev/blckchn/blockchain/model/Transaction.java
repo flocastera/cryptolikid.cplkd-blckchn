@@ -1,4 +1,4 @@
-package lbp.toolsfordev.blckchn.model;
+package lbp.toolsfordev.blckchn.blockchain.model;
 
 import lombok.*;
 

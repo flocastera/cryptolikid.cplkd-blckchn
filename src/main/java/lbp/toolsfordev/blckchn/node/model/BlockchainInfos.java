@@ -1,11 +1,13 @@
-package lbp.toolsfordev.blckchn.model;
+package lbp.toolsfordev.blckchn.node.model;
 
+import lbp.toolsfordev.blckchn.blockchain.model.Block;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.Vector;
 
 /**
- * ResponseMessage
+ * BlockchainInfos
  *
  * @author xekg473
  * @version 1.0
@@ -17,12 +19,15 @@ import java.io.Serializable;
 @ToString(callSuper = false)
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseMessage implements Serializable {
+public class BlockchainInfos implements Serializable {
 
 	/** serialVersionUID */
 	private static final long serialVersionUID = 1L;
 
-	/** message */
-	private String message;
+	/** blocks */
+	private Vector<Block> blocks;
+
+	/** depth */
+	private int depth;
 
 }

@@ -1,10 +1,10 @@
-package lbp.toolsfordev.blckchn.blockchain;
+package lbp.toolsfordev.blckchn.blockchain.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lbp.toolsfordev.blckchn.model.Block;
-import lbp.toolsfordev.blckchn.model.BlockchainInfos;
-import lbp.toolsfordev.blckchn.model.Transaction;
+import lbp.toolsfordev.blckchn.blockchain.model.Block;
+import lbp.toolsfordev.blckchn.node.model.BlockchainInfos;
+import lbp.toolsfordev.blckchn.blockchain.model.Transaction;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.codec.digest.DigestUtils;
