@@ -1,5 +1,7 @@
 package lbp.toolsfordev.blckchn.blockchain.controller;
 
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * BlockchainController
  *
@@ -8,5 +10,6 @@ package lbp.toolsfordev.blckchn.blockchain.controller;
  * @date 01/06/2018
  * @copyright La Poste 2018
  */
+@RestController(value = "/blockchain")
 public class BlockchainController {
 }

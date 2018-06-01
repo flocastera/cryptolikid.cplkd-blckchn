@@ -16,5 +16,5 @@ public class BLCKCHNApplicationStarter {
 	public static void main(String[] args) {
 		SpringApplication.run(BLCKCHNApplicationStarter.class, args);
 	}
-	
+
 }
