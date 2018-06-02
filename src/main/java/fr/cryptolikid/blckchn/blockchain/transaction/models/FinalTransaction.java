@@ -1,6 +1,7 @@
 package fr.cryptolikid.blckchn.blockchain.transaction.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import fr.cryptolikid.blckchn.blockchain.transaction.exceptions.BadTransactionException;
 import fr.cryptolikid.blckchn.blockchain.transaction.exceptions.TransactionInfoMissingException;
 import fr.cryptolikid.blckchn.common.interfaces.IValidableModel;
@@ -29,13 +30,16 @@ public class FinalTransaction<T extends TransactionData>
 
 	/** transactionId */
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+	@JsonUnwrapped
 	private TransactionId transactionId;
 
 	/** receiver */
-	private String receiver;
+	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+	private Address receiver;
 
 	/** sender */
-	private String sender;
+	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+	private Address sender;
 
 	/** data */
 	private T data;
@@ -53,5 +57,15 @@ public class FinalTransaction<T extends TransactionData>
 	@JsonProperty(value = "transactionId", access = JsonProperty.Access.READ_ONLY)
 	public String getTxId() {
 		return transactionId.getTxId();
+	}
+
+	@JsonProperty(value = "receiver", access = JsonProperty.Access.READ_ONLY)
+	public String receiver(){
+		return receiver.getValue();
+	}
+
+	@JsonProperty(value = "sender", access = JsonProperty.Access.READ_ONLY)
+	public String sender(){
+		return sender.getValue();
 	}
 }

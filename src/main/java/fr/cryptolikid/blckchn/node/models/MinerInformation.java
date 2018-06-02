@@ -1,5 +1,6 @@
 package fr.cryptolikid.blckchn.node.models;
 
+import fr.cryptolikid.blckchn.blockchain.transaction.models.Address;
 import fr.cryptolikid.blckchn.common.interfaces.IValidableModel;
 import fr.cryptolikid.blckchn.node.exceptions.MinerMissingInformationException;
 import lombok.*;
@@ -23,14 +24,15 @@ public class MinerInformation implements IValidableModel {
 	private String minerIdentifier;
 
 	/** paymentAddress */
-	private String paymentAddress;
+	private Address paymentAddress;
 
 	/**
 	 * @throws MinerMissingInformationException if model is not valid
 	 */
 	@Override
 	public void validate() throws MinerMissingInformationException {
-		if (StringUtils.isEmpty(minerIdentifier) || StringUtils.isEmpty(paymentAddress))
+		paymentAddress.validate();
+		if (StringUtils.isEmpty(minerIdentifier))
 			throw new MinerMissingInformationException();
 	}
 }

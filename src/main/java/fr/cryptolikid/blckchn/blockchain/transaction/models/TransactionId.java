@@ -1,5 +1,6 @@
 package fr.cryptolikid.blckchn.blockchain.transaction.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import java.io.Serializable;
@@ -22,6 +23,7 @@ public class TransactionId implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	/** txId */
+	@JsonProperty("transactionId")
 	private String txId;
 
 }

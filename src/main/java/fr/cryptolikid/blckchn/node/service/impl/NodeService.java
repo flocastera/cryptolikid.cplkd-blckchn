@@ -1,6 +1,7 @@
 package fr.cryptolikid.blckchn.node.service.impl;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import fr.cryptolikid.blckchn.blockchain.block.constants.BlockConstants;
 import fr.cryptolikid.blckchn.blockchain.block.exceptions.BlockException;
 import fr.cryptolikid.blckchn.blockchain.block.models.Block;
 import fr.cryptolikid.blckchn.blockchain.block.service.IBlockGeneratorService;
@@ -83,7 +84,7 @@ public class NodeService implements INodeService {
 
 		ifs.validate();
 
-		grant.setSender("0x");
+		grant.setSender(BlockConstants.GENESIS_ADDRESS);
 		grant.setReceiver(ifs.getPaymentAddress());
 		grant.setData(new AmountTransactionData(new BigDecimal(1)));
 		grant.setTransactionId(this.transactionService.getNewTransactionId());

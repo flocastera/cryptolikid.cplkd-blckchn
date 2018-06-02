@@ -1,5 +1,6 @@
 package fr.cryptolikid.blckchn.blockchain.block.constants;
 
+import fr.cryptolikid.blckchn.blockchain.transaction.models.Address;
 import fr.cryptolikid.blckchn.node.proofofwork.models.Proof;
 
 /**
@@ -19,5 +20,9 @@ public interface BlockConstants {
 
 	/** GENESIS_BLOCK_HASH */
 	String GENESIS_BLOCK_HASH = "NoWImbOrN";
+
+	/** GENESIS_ADDRESS */
+	Address GENESIS_ADDRESS = new Address("0x");
+
 
 }

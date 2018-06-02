@@ -1,5 +1,6 @@
 package fr.cryptolikid.blckchn.blockchain.block.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import fr.cryptolikid.blckchn.blockchain.block.exceptions.BadBlockException;
 import fr.cryptolikid.blckchn.blockchain.transaction.models.FinalTransaction;
 import fr.cryptolikid.blckchn.blockchain.transaction.models.TransactionData;
@@ -41,6 +42,7 @@ public class Block implements Serializable, IValidableModel {
     private Vector<FinalTransaction<? extends TransactionData>> transactions = new Vector<>();
 
     /** proof */
+    @JsonIgnore
     private Proof proof;
 
     /** previousHash */
