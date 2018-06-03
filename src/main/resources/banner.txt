@@ -1,0 +1,21 @@
+
+	${Ansi.BRIGHT_RED}                    ___ ___            ___                     ${Ansi.GREEN}___       ___          ___                ___
+	${Ansi.BRIGHT_RED}                   `MM `MM            `MM                      ${Ansi.GREEN}MM       `MM          `MM                `MM
+	${Ansi.BRIGHT_RED}                    MM  MM             MM                      ${Ansi.GREEN}MM        MM           MM                 MM
+	${Ansi.BRIGHT_RED}  ____   __ ____    MM  MM   __    ____MM                      ${Ansi.GREEN}MM____    MM   ____    MM   __    ____    MM  __   ___  __
+	${Ansi.BRIGHT_RED} 6MMMMb. `M6MMMMb   MM  MM   d'   6MMMMMM                      ${Ansi.GREEN}MMMMMMb   MM  6MMMMb.  MM   d'   6MMMMb.  MM 6MMb  `MM 6MMb
+	${Ansi.BRIGHT_RED}6M'   Mb  MM'  `Mb  MM  MM  d'   6M'  `MM                      ${Ansi.GREEN}MM'  `Mb  MM 6M'   Mb  MM  d'   6M'   Mb  MMM9 `Mb  MMM9 `Mb
+	${Ansi.BRIGHT_RED}MM    `'  MM    MM  MM  MM d'    MM    MM                      ${Ansi.GREEN}MM    MM  MM MM    `'  MM d'    MM    `'  MM'   MM  MM'   MM
+	${Ansi.BRIGHT_RED}MM        MM    MM  MM  MMdM.    MM    MM       ${AnsiColor.YELLOW}MMMMMMM        ${Ansi.GREEN}MM    MM  MM MM        MMdM.    MM        MM    MM  MM    MM
+	${Ansi.BRIGHT_RED}MM        MM    MM  MM  MMPYM.   MM    MM                      ${Ansi.GREEN}MM    MM  MM MM        MMPYM.   MM        MM    MM  MM    MM
+	${Ansi.BRIGHT_RED}YM.   d9  MM.  ,M9  MM  MM  YM.  YM.  ,MM                      ${Ansi.GREEN}MM.  ,M9  MM YM.   d9  MM  YM.  YM.   d9  MM    MM  MM    MM
+	${Ansi.BRIGHT_RED} YMMMM9   MMYMMM9  _MM__MM_  YM._ YMMMMMM_                    ${Ansi.GREEN}_MYMMMM9  _MM_ YMMMM9  _MM_  YM._ YMMMM9  _MM_  _MM__MM_  _MM_
+	${Ansi.BRIGHT_RED}          MM
+	${Ansi.BRIGHT_RED}          MM
+	${Ansi.BRIGHT_RED}         _MM_
+
+	${Ansi.GREEN} :: ${application.title}${application.formatted-version} :: ${Ansi.DEFAULT}
+	${Ansi.YELLOW} :: Spring Boot${spring-boot.formatted-version} :: ${Ansi.DEFAULT}
+	${AnsiColor.BRIGHT_CYAN} :: Swagger 2.7.0 :: ${Ansi.DEFAULT}
+	${AnsiColor.BRIGHT_CYAN} :: FasterXML Jackson 2.9.0 :: ${Ansi.DEFAULT}
+	${AnsiColor.BRIGHT_CYAN} :: Lombok 1.16.20 :: ${Ansi.DEFAULT}

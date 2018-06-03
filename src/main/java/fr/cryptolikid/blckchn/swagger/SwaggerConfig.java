@@ -30,7 +30,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 	private static final String CONTACT_NAME = "DSIGD";
 
 	/** CONTACT_URL */
-	private static final String CONTACT_URL = "https://damntools.fr";
+	private static final String CONTACT_URL = "https://www.cryptolikid.fr";
 
 	/** CONTACT_EMAIL */
 	private static final String CONTACT_EMAIL = "contact.blckchn@cryptolikid.com";
